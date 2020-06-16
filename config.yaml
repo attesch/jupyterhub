@@ -1,0 +1,20 @@
+proxy:
+  secretToken: "bbf28bd6a13100fbf3ffeb86d3fd1d7fc9f056d39c12be56a271db9762a41be6"
+
+hub:
+  service:
+    ports: 
+      port: 8080
+
+image:
+  # Get the latest image tag at:
+  # https://hub.docker.com/r/jupyter/datascience-notebook/tags/
+  # Inspect the Dockerfile at:
+  # https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook/Dockerfile
+  name: jupyter/datascience-notebook
+  tag: 678ada768ab1
+
+cull:
+  timeout: 900
+  every: 60
+
